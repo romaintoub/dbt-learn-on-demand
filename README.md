@@ -1,4 +1,9 @@
-Welcome to your new dbt project!
+Welcome to my new dbt project!
+
+## dbt
+dbt is a command line tool that enables data analysts and engineers to transform data in their warehouse more effectively.
+This project shows the tools to learn the Fundamentals of dbt including modeling, testing, documentation and delployment.
+Try this project: [learn.getdbt.com](https://learn.getdbt.com)
 
 ### Using the starter project
 
