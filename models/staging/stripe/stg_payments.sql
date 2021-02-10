@@ -5,9 +5,8 @@ with payments as (
         orderid as order_id,
         paymentmethod as payment_method,
         created as created_at,
-        _batched_at as batched_at,
         status,
-        amount
+        amount / 100 as amount
     
     from raw.stripe.payment       
 )

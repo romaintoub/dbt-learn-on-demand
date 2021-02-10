@@ -1,0 +1,29 @@
+version: 2
+
+models:
+    - name: stg_payments
+      description: Staged customer data from our jaffle shop app.
+      columns:
+        - name: payment_id
+          description: The primary key for payments.
+          tests:
+            - unique
+            - not_null
+        
+        - name: payment_method
+          description: Method used for payments.
+          tests: 
+            - accepted_values:
+                values: ['credit_card', 'coupon', 'bank_transfer', 'gift_card']
+
+        - name: status
+          description: Payment was successfull or not.
+          tests:
+            - accepted_values:
+                values: ['success', 'fail']
+
+        - name: created_at
+          description: Date when payment was made.
+
+        - name: amount
+          description: Amount of money paid. 
