@@ -26,4 +26,4 @@ models:
           description: Date when payment was made.
 
         - name: amount
-          description: Amount of money paid. 
+          description: Amount of money paid in $. 
